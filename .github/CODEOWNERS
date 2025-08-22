@@ -1,0 +1,37 @@
+# CODEOWNERS file for auth-processor-810
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-reliability @Armor-test/dept-security @Armor-test/unit-devops
+
+# Directory ownership
+/internal/ @Armor-test/grp-search @Armor-test/grp-api
+/extensions/ @Armor-test/team-logging @Armor-test/squad-cache @Armor-test/squad-performance
+/ui/ @Armor-test/grp-integration @Armor-test/squad-payments @Armor-test/squad-ux
+/public/ @Armor-test/squad-frontend @Armor-test/squad-ux @Armor-test/dept-security
+/test/ @Armor-test/unit-design @Armor-test/team-governance
+/components/ @Armor-test/squad-performance @Armor-test/squad-ml
+/migrations/ @Armor-test/dept-data @Armor-test/dept-automation
+/deploy/ @Armor-test/squad-database @Armor-test/squad-api @Armor-test/unit-governance
+/auth/ @Armor-test/dept-automation @Armor-test/squad-qa @Armor-test/squad-frontend
+/scripts/ @Armor-test/team-notifications @Armor-test/dept-api
+/styles/ @Armor-test/squad-cache @Armor-test/dept-reporting
+
+# File type ownership
+*.java @Armor-test/squad-apps @Armor-test/grp-api
+*.rb @Armor-test/squad-product @Armor-test/squad-search
+*.php @Armor-test/unit-governance @Armor-test/squad-qa
+*.go @Armor-test/team-notifications @Armor-test/squad-apps
+*.c @Armor-test/dept-api @Armor-test/team-logging @Armor-test/team-security
+*.lock @Armor-test/squad-performance @Armor-test/grp-search
+*.xml @Armor-test/dept-billing @Armor-test/unit-governance
+*.sh @Armor-test/dept-security @Armor-test/squad-api
+*.py @Armor-test/team-notifications @Armor-test/squad-product @Armor-test/unit-design
+*.gradle @Armor-test/grp-search @Armor-test/team-core
+*.yaml @Armor-test/squad-qa @Armor-test/squad-payments
+*.sql @Armor-test/dept-data @Armor-test/squad-apps @Armor-test/team-logging
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
